@@ -1,0 +1,561 @@
+/* Importando fontes averta */
+@font-face {
+  font-family: "Averta Regular";
+  src: url('./fonts/AVERTA/AVERTA-REGULAR.OTF');
+}
+
+@font-face {
+  font-family: "Averta Bold";
+  src: url('./fonts/AVERTA/Averta\ Bold.otf');
+}
+
+/* Animação do gradiente */
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  70% { background-position: 100% 50%; }
+  120% { background-position: 0% 50%; }
+}
+
+/* Área de RESET */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilização do corpo da página */
+body {
+  font-family: 'Averta Regular', Arial, Helvetica, sans-serif;
+  background-color: #e9e9e9;
+  text-align: justify;
+  font-size: 20;
+  overflow-x: hidden;
+}
+
+/* Cabeçalho fixo */
+.header {
+  background: radial-gradient(circle at center, #1a81db, #4bbedb);
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+  padding-inline: 15px;
+  padding-bottom: 9px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: -2px 8px 15px #89e7ff;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 1s ease;
+}
+
+a:hover {
+  transform: translateY(-10px);
+}
+
+h1, h2 {
+  color: #4d7bac
+}
+
+/* Escopo de navegação principal */
+.nav {
+  max-width: 1280px;
+  height: 70px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 22px;
+}
+
+/* Lista de navegação */
+.nav-list {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  margin-top: 8px;
+  margin-right: -3px;
+}
+
+/* Estilo dos links de navegação */
+.nav-list a {
+  font-size: 20px;
+  color: #e9e9e9;
+  padding-block: 16px;
+  font-weight: bold;
+}
+
+/* Efeito hover nos links de navegação */
+.nav-list a:hover {
+  color: #333;
+  transition: 0.5s;
+}
+
+p {
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+/* Logo da FabLab */
+#logo_fab {
+  width: 140px;
+  height: 140px;
+  margin-top: 13px;
+  margin-left: -22px;
+}
+
+/* Criação do menu dropdown (menu suspenso) */
+.dropdown {
+  position: relative;
+}
+
+/* Menu do dropdown */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #e9e9e9;
+  border: 1px solid #4bbedb;
+  border-radius: 5px;
+  padding: 10px 0;
+  width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  list-style: none;
+}
+
+/* Exibir dropdown ao passar o mouse */
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Itens do menu suspenso */
+.dropdown-menu li {
+  padding: 5px 15px;
+}
+
+/* Ícones do menu */
+.dropdown-menu i {
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+  color: inherit;
+}
+
+/* Estilo dos links dentro do dropdown */
+.dropdown-menu a {
+  color: #4bbedb !important;
+  padding: 5px 0 !important;
+  font-weight: normal !important;
+  display: flex;
+  align-items: center;
+}
+
+/* Hover nos links do dropdown */
+.dropdown-menu a:hover {
+  color: #333 !important;
+}
+
+.dropdown > a::after {
+  content: "▾";
+  margin-left: 6px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.dropdown:hover > a::after {
+  transform: rotate(180deg);
+}
+
+/* Estilo da seção principal */
+.main_home {
+  margin-top: 80px;
+  padding: 20px;
+  color: #333;
+  line-height: 1.6;
+  width: 100%;
+}
+
+/* Container de conteúdo principal */
+.content-container {
+  /* max-width: 1670px; */
+  margin: 0 50px 0 0;
+  padding: 0 20px;
+}
+
+/* Botão de menu hambúrguer para dispositivos móveis */
+.hamburger {
+  display: none;
+  border: none;
+  background: none;
+  border-top: 3px solid rgb(208, 219, 230);
+  cursor: pointer;
+}
+
+/* Linhas do menu hambúrguer */
+.hamburger::after,
+.hamburger::before {
+  content: " ";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: rgb(208, 219, 230);
+  margin-top: 5px;
+  position: relative;
+  transition: 0.3s;
+}
+
+#botao_flutuante {
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+/* Configuração do rodapé */
+#rodape {
+  box-sizing: border-box;
+  margin-top: 90px;
+  background: linear-gradient(100deg, #383838, #0c0c0c);
+  color: #e9e9e9; 
+  padding: 2rem; 
+  text-align: center;
+  width: 100%;
+}
+
+
+/* Container flexível para o conteúdo */
+#rodape div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Links sociais - espaçamento e tamanho responsivo */
+#social-links {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* Texto do copyright - tamanho responsivo */
+#rodape p {
+  margin: 0;
+  font-size: clamp(0.9rem, 2vw, 1rem); /* Tamanho mínimo, ideal e máximo */
+}
+
+/* Ícones - tamanho e hover */
+.fab {
+  color: #e9e9e9;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.fab:hover {
+  transform: translateY(-3px);
+}
+
+/* =================== SEÇÃO DE RESPONSIVIDADES =================== */
+
+/* Responsividade para até 750px */
+@media (max-width: 750px) {
+  .hamburger {
+    display: block;
+    z-index: 1;
+  }
+
+  #logo_fab {
+    position: relative;
+    left: -3px;
+    z-index: 10;
+  }
+
+  .nav-list {
+    position: fixed;
+    top: -50px;
+    left: 0;
+    width: 100vw;
+    height: 105vh;
+    background: linear-gradient(70deg, #1e88e5, #3ca7c2, #0a69bd);
+    background-size: 250% 100%;
+    animation: gradient 20s ease infinite;
+    clip-path: circle(100px at 90% -15%);
+    transition: 0.8s ease-out;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0px;
+    pointer-events: none;
+  }
+
+  .nav-list a {
+    font-size: 24px;
+    color: rgb(208, 219, 230);
+    opacity: 0;
+  }
+
+  .nav-list li:nth-child(1) a { transition: 0.5s 0.2s; }
+  .nav-list li:nth-child(2) a { transition: 0.5s 0.4s; }
+  .nav-list li:nth-child(3) a { transition: 0.5s 0.6s; }
+
+  .nav.active .nav-list {
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all;
+  }
+
+  .nav.active .nav-list a {
+    opacity: 1;
+  }
+
+  .nav.active .hamburger {
+    position: fixed;
+    top: 26px;
+    right: 16px;
+    border-top-color: transparent;
+  }
+
+  .nav.active .hamburger::before {
+    transform: rotate(135deg);
+    background-color: rgb(208, 219, 230);
+  }
+
+  .nav.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+    background-color: rgb(208, 219, 230);
+  }
+
+  .dropdown {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown-menu {
+    position: static !important;
+    width: 100% !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    padding: 0 !important;
+    margin: 0 auto;
+  }
+
+  .dropdown.active .dropdown-menu {
+    max-height: 500px;
+    padding: 10px 0 !important;
+  }
+
+  .dropdown-menu li {
+    padding: 12px 0 !important;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 6px 0;
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
+
+  .dropdown-menu li:active {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+  }
+
+  .dropdown-menu a {
+    color: rgb(208, 219, 230) !important;
+    justify-content: center;
+    font-size: 18px !important;
+  }
+
+  .dropdown-menu a:hover {
+    color: #333 !important;
+  }
+
+  .nav-list i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+  }
+
+  .dropdown-menu i {
+    color: rgb(208, 219, 230) !important;
+  }
+
+  #botao_flutuante {
+    transition: all 0.4s ease;
+  }
+  
+  .nav:not(.active) ~ #botao_flutuante {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+}
+
+/* Responsividade para até 1024px */
+@media (max-width: 1024px) {
+  .main_home {
+    padding: 20px 40px;
+  }
+
+  #logo_fab {
+    position: relative;
+    left: 15px;
+    z-index: 100;
+  }
+}
+
+/* Responsividade para até 768px */
+@media (max-width: 768px) {
+  .main_home {
+    padding: 20px 30px;
+  }
+
+  #logo_fab {
+    position: relative;
+    left: 4px;
+    z-index: 100;
+  }
+
+  .nav-list {
+    gap: 30px;
+  }
+
+  #rodape {
+    padding: 1.5rem;
+  }
+
+  #social-links {
+    gap: 1rem;
+    font-size: 1.3rem;
+  }
+}
+
+/* Responsividade para até 480px */
+@media (max-width: 480px) {
+  .main_home {
+    padding: 20px 15px;
+    margin-top: 70px;
+  }
+
+  .nav-list a {
+    font-size: 18px;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+    left: 0;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  #rodape {
+    padding: 1rem;
+    margin-top: 60px;
+  }
+
+  #rodape div {
+    gap: 1rem;
+  }
+
+  #social-links {
+    font-size: 1.2rem;
+  }
+}
+
+/* =================================================== */
+
+/* Estilo do botão flutuante */
+#botao_flutuante {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #4bbedb, #1e88e5);
+  color: aliceblue;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  line-height: 60px;
+  cursor: pointer;
+  z-index: 100;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+  animation-fill-mode: none; 
+}
+
+/* Efeito ao passar o mouse */
+#botao_flutuante:hover {
+  transform: scale(1.1);
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #1e88e5, #4bbedb);
+}
+
+/* Efeito ao clicar */
+#botao_flutuante:active {
+  transform: scale(0.95);
+}
+
+/* Ícone */
+#botao_flutuante::after {
+  content: "↑";
+  display: inline-block;
+  transition: transform 0.3s ease; /* Adiciona transição apenas para o transform */
+}
+
+/* Aumenta a setinha do botão no hover */
+#botao_flutuante:hover::after {
+  transform: scale(1.3);
+  font-size: 1.2em;
+}
+
+/* Esconde o botão flutuante quando o menu está ativo */
+.nav.active ~ #botao_flutuante {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+}
+
+/* Adicione isso junto com os estilos do botão flutuante */
+#botao_flutuante.click-effect {
+  animation: clickPulse 0.5s ease-out;
+}
+
+@keyframes clickPulse {
+  0% { box-shadow: 0 0 0 0 rgba(75, 190, 219, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(75, 190, 219, 0); }
+  100% { box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); }
+}
+
+
+/* Conteúdo de exemplo para demonstrar a rolagem */
+/* body {
+  height: 3000px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+} */
+
+/* Criando div para estilizar em caixa */
+/*
+.lista {
+  width: 500px;
+  height: 100px;
+  background-color: rebeccapurple;
+  margin: 10px auto;
+  border-radius: 10px;
+  text-align: justify;
+  color: white;
+  padding: 10px
+} */
