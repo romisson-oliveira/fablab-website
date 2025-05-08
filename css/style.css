@@ -71,7 +71,9 @@ a:hover {
 }
 
 h1, h2 {
-  color: #4d7bac
+  color: #4d7bac;
+  text-align: center;
+  padding: 8px 0;
 }
 
 /* Escopo de navegação principal */
@@ -191,7 +193,7 @@ p {
 
 /* Estilo da seção principal */
 .main_home {
-  padding: 20px;
+  padding: 0;
   color: #333;
   line-height: 1.6;
   width: 100%;
@@ -199,8 +201,12 @@ p {
 
 /* Container de conteúdo principal */
 .content-container {
-  /* max-width: 1670px; */
+  width: 1200px;
+  margin: 15px auto 15px;
+  position: center;
   padding: 0 20px;
+  background-color: #a5c5e8;
+  border-radius: 20px;
 }
 
 /* Botão de menu hambúrguer para dispositivos móveis */

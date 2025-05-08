@@ -34,11 +34,6 @@
 
 /* ----- Bloco para a caixa que está na imagem inicial da homepage */
 
-#titulo_intro{
-  color: white;
-  padding: 13px 4px 4px 0;
-  text-align: center;
-}
 /* Conteiner do texto */
 .box-parag{
   width: 550px;
@@ -49,6 +44,12 @@
   right: 50px;
   bottom: 50px;
 
+#titulo_intro{
+  color: white;
+  padding: 13px 4px 4px 0;
+  text-align: center;
+}
+
 /* Estilizando o parágrafo de denro do conteiner */
 .card-p {
   color: rgb(65, 62, 62);
@@ -56,4 +57,12 @@
   padding: 0 20px 10px;
   font-size: 1em;
 }
+
+/* Estilizando o verdinho */
+.verdinho {
+  color: rgb(58, 202, 58);
+
+}
+
+
 }
