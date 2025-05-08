@@ -7,14 +7,15 @@
   <title>Bem vindos ao FabLab!</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.css"/> 
+  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/specific.css">
 </head>
 
 <body>
   <header class="header">
     <nav class="nav">
-      <img src="./img/logo_fablab_branco.png" alt="Símbolo do FabLab" id="logo_fab">
+      <a href="./index.html" class="sem-efeito"><img src="./img/logo_fablab_branco.png" alt="Símbolo do FabLab"
+          id="logo_fab"></a>
       <button class="hamburger"></button>
       <ul class="nav-list">
         <li><a href="./index.html"><i class="fas fa-home"></i> Início</a></li>
@@ -32,29 +33,38 @@
       </ul>
     </nav>
   </header>
-  
+
   <button id="botao_flutuante" title="Voltar para o topo da página"></button>
 
-  <main class="main_home">
-    <div class="content-container">
+  <div class="img_home">
+    <div class="box-parag">
       <h1 id="titulo_intro">Bem vindo ao The 4.20 Lab</h1>
-      <p class="ident">Em nosso Fab Lab oferecemos um espaço equipado com ferramentas de alta tecnologia para makers, designers,
+      <p class="card-p">Em nosso Fab Lab oferecemos um espaço equipado com ferramentas de alta tecnologia para makers,
+        designers,
         engenheiros, professores, estudantes e entusiastas. Aqui, você poderá prototipar, aprender e transformar suas
         ideias em realidade.
-        Conheça nosso espaço e se surpreenda com as diversas possibilidades para transcorrer sua criatividade.
+      <p class="card-p bold">Conheça nosso espaço e se surpreenda com as diversas possibilidades para transcorrer sua
+        criatividade!</p>
       </p>
+    </div>
+  </div>
+  <main class="main_home">
+    <div class="content-container">
       <h2>Criatividade no FabLab: Onde as ideias ganham vida!</h2>
-      <p class="ident">Em nosso laboratório de fabricação digital, a criatividade não é apenas bem-vinda - ela é essencial. Aqui, a
+      <p class="ident">Em nosso laboratório de fabricação digital, a criatividade não é apenas bem-vinda - ela é
+        essencial. Aqui, a
         liberdade de experimentar, errar e recriar irá transformar conceitos abstratos em projetos tangíveis. Seja com
         uma impressora 3D, uma cortadora a laser ou um bancada de eletrônica, cada ferramenta é um convite para inovar.
       </p>
       <ol>
         <li>
-          Liberdade para Prototipar - A possibilidade de prototipar rapidamente permite testar ideias, ajustar detalhes e
+          Liberdade para Prototipar - A possibilidade de prototipar rapidamente permite testar ideias, ajustar detalhes
+          e
           evoluir projetos em tempo real.
         </li>
         <li>
-          Colaboração que Inspira - Encontre pessoas com habilidades diferentes, troque conhecimentos e descubra soluções
+          Colaboração que Inspira - Encontre pessoas com habilidades diferentes, troque conhecimentos e descubra
+          soluções
           inesperadas. Junte-se a nós e crie algo único!
         </li>
         <li>
@@ -72,59 +82,72 @@
       <h2>Como Despertar Sua Criatividade no FabLab?</h2>
       <ol>
         <li>Comece pequeno - não espere a ideia perfeita. Protótipos simples podem evoluir para grandes projetos.</li>
-        <li>Experimente ferramentas diferentes - às vezes, uma técnica nova é o que falta para tirar uma ideia do papel.</li>
+        <li>Experimente ferramentas diferentes - às vezes, uma técnica nova é o que falta para tirar uma ideia do papel.
+        </li>
         <li>Colabore - converse com outros makers. Uma perspectiva externa pode revolucionar seu projeto.</li>
-        <li>Documente seus processos - anote erros e acertos. Isso te ajudará a refinar seu projeto para alcançar o resultado idealizado.</li>
-        <li>Participe de desafios e hackathons - competições criativas são ótimas para pensar fora da caixa (“think outside the box”).</li>
+        <li>Documente seus processos - anote erros e acertos. Isso te ajudará a refinar seu projeto para alcançar o
+          resultado idealizado.</li>
+        <li>Participe de desafios e hackathons - competições criativas são ótimas para pensar fora da caixa (“think
+          outside the box”).</li>
       </ol>
       <p>Segundo <cite>Albert Einstein</cite>, "A criatividade é a inteligência se divertindo."</p>
     </div>
     <!-- Aqui vai entrar uma imagem -->
 
     <h2>O que oferecemos</h2>
-<ol class="card-ol">
-  <li>Corte a Laser - precisão e versatilidade para seus projetos em madeira, acrílico e outros materiais.</li>
-  <li>Impressão 3D - modele seu protótipo e traga seus designs e materialize-o em plásticos, resinas e outros filamentos.</li>
-  <li>Fresadora CNC</li>
-  <li>Bancadas de Eletrônica e Computadores para Programação - Arduino, Raspberry Pi, ESP 32 e outras plataformas para prototipagem eletrônica, incluindo outros dispositivos de IoT (internet of things).</li>
-  <li>Workshops e Cursos - Participe! Aprenda novas habilidades com nossos workshops sobre fabricação digital, ministradas por profissionais que são referências no mercado de tecnologia da informação.</li>
-  <li>Espaço Colaborativo - ambiente inspirador e aconchegante para trocar ideias e colaborar em projetos inovadores.</li>
-  <li>E muito mais…</li>
-</ol>
+    <ol class="card-ol">
+      <li>Corte a Laser - precisão e versatilidade para seus projetos em madeira, acrílico e outros materiais.</li>
+      <li>Impressão 3D - modele seu protótipo e traga seus designs e materialize-o em plásticos, resinas e outros
+        filamentos.</li>
+      <li>Fresadora CNC</li>
+      <li>Bancadas de Eletrônica e Computadores para Programação - Arduino, Raspberry Pi, ESP 32 e outras plataformas
+        para prototipagem eletrônica, incluindo outros dispositivos de IoT (internet of things).</li>
+      <li>Workshops e Cursos - Participe! Aprenda novas habilidades com nossos workshops sobre fabricação digital,
+        ministradas por profissionais que são referências no mercado de tecnologia da informação.</li>
+      <li>Espaço Colaborativo - ambiente inspirador e aconchegante para trocar ideias e colaborar em projetos
+        inovadores.</li>
+      <li>E muito mais…</li>
+    </ol>
 
-<h2>Por que Escolher Nosso FabLab? 🙂</h2>
-<p class="ident">No nosso FabLab, você tem acesso a equipamentos de ponta como impressoras 3D e cortadoras a laser, em um ambiente seguro, climatizado e pronto para estimular sua criatividade. Faz parte de uma comunidade ativa de makers, ideal para trocar experiências e aprender com outros criadores. Além disso, contamos com suporte técnico especializado para te orientar em cada etapa do projeto. Promovemos eventos, workshops e oportunidades de networking para quem quer se conectar com pessoas criativas. E o melhor: tudo isso com preços acessíveis e pacotes flexíveis que se ajustam ao seu perfil. Venha fazer parte dessa rede e transforme suas ideias em realidade!</p>
-
-
-<h2>Agende uma Visita ou Participe de um Workshop!</h2>
-<p>
-  Você é uma pessoa que adora um desafio? Não teme o novo?  Quer conhecer nosso espaço ou começar um projeto?
-  Entre em contato ou visite-nos!
-</p>
-
-<a href="#" class="sem-efeito"><i class="fa-solid fa-phone"> &nbsp;Telefone</i></a><br>
-<a href="mailto:lab_startup@outlook.com" class="sem-efeito"><i class="fa-solid fa-envelope"> &nbsp;Email</i></a>
-<!-- [endereço] - [talvez, se der, um link que abre o Google Maps] -->
-
-<!-- [Botão : Agendar visita] -->
-<!-- [Botão: Ver Workshops] -->
-
-<!-- Ou acesse: “sobre nós”. -->
+    <h2>Por que Escolher Nosso FabLab? 🙂</h2>
+    <p class="ident">No nosso FabLab, você tem acesso a equipamentos de ponta como impressoras 3D e cortadoras a laser,
+      em um ambiente seguro, climatizado e pronto para estimular sua criatividade. Faz parte de uma comunidade ativa de
+      makers, ideal para trocar experiências e aprender com outros criadores. Além disso, contamos com suporte técnico
+      especializado para te orientar em cada etapa do projeto. Promovemos eventos, workshops e oportunidades de
+      networking para quem quer se conectar com pessoas criativas. E o melhor: tudo isso com preços acessíveis e pacotes
+      flexíveis que se ajustam ao seu perfil. Venha fazer parte dessa rede e transforme suas ideias em realidade!</p>
 
 
-<h2>Últimos Projetos da Comunidade</h2>
-<p>(Aqui podemos colocar fotos que tirarmos no FabLab dos projetos concluídos, o que tiver disponível - e o link para a página de projetos)</p>
+    <h2>Agende uma Visita ou Participe de um Workshop!</h2>
+    <p>
+      Você é uma pessoa que adora um desafio? Não teme o novo? Quer conhecer nosso espaço ou começar um projeto?
+      Entre em contato ou visite-nos!
+    </p>
+
+    <a href="#" class="sem-efeito"><i class="fa-solid fa-phone"> &nbsp;Telefone</i></a><br>
+    <a href="mailto:lab_startup@outlook.com" class="sem-efeito"><i class="fa-solid fa-envelope"> &nbsp;Email</i></a>
+    <!-- [endereço] - [talvez, se der, um link que abre o Google Maps] -->
+
+    <!-- [Botão : Agendar visita] -->
+    <!-- [Botão: Ver Workshops] -->
+
+    <!-- Ou acesse: “sobre nós”. -->
 
 
-<h2>Junte-se à Nossa Comunidade Maker!</h2>
-<p>
-  Siga-nos nas redes sociais e fique por dentro das novidades:
-  [ícones para redes sociais: Instagram, Facebook, LinkedIn, Youtube]
-</p>
+    <h2>Últimos Projetos da Comunidade</h2>
+    <p>(Aqui podemos colocar fotos que tirarmos no FabLab dos projetos concluídos, o que tiver disponível - e o link
+      para a página de projetos)</p>
+
+
+    <h2>Junte-se à Nossa Comunidade Maker!</h2>
+    <p>
+      Siga-nos nas redes sociais e fique por dentro das novidades:
+      [ícones para redes sociais: Instagram, Facebook, LinkedIn, Youtube]
+    </p>
 
 
 
-<h3>Transforme ideias em realidade. Venha fazer parte do The 4.20 Lab! 🎉</h3>
+    <h3>Transforme ideias em realidade. Venha fazer parte do The 4.20 Lab! 🎉</h3>
   </main>
 
   <footer id="rodape">
@@ -132,12 +155,13 @@
       <p>© 2025 FabLab</p>
       <div id="social-links">
         <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>        
+        <a href="#"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
   </footer>
 
 
-<script src="js/index.js"></script>
+  <script src="js/index.js"></script>
 </body>
+
 </html>

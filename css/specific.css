@@ -22,3 +22,38 @@
 .ident {
     text-indent: 22px;
   }
+
+/* Imagem da homepage */
+.img_home {
+  padding: 20px;
+  height: 500px;
+  background: silver url('../img/img_fablab.jpg') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* ----- Bloco para a caixa que está na imagem inicial da homepage */
+
+#titulo_intro{
+  color: white;
+  padding: 13px 4px 4px 0;
+  text-align: center;
+}
+/* Conteiner do texto */
+.box-parag{
+  width: 550px;
+  background-color: rgb(217, 221, 93);
+  opacity: 0.91;
+  border-radius: 5px 40px 5px 40px;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+
+/* Estilizando o parágrafo de denro do conteiner */
+.card-p {
+  color: rgb(65, 62, 62);
+  text-align: end;
+  padding: 0 20px 10px;
+  font-size: 1em;
+}
+}
